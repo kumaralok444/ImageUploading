@@ -10,7 +10,7 @@
 
     <input type="file" id="my_image" value="">
     <div>
-        <a href="javascript:;" id="previous">Left arrow</a>
+        <a href="#" id="previous">Left Arrow</a>
         <a href="javascript:;" id="next">>Right arrow</a>
 
     </div>
@@ -28,24 +28,25 @@
 
     document.getElementById("previous").onclick=function()
     {
-
-        if(count>a.length){
-            document.getElementById("image").src=a[count--];
-
-        }else{
-            document.getElementById("image").src=a[0];
-        }
-
-
+		
+		if(count>0)
+		{
+            count=count-1;
+            alert(count);
+            document.getElementById("image").src=a[count];
+            console.log("Previous "+count);
+		}
     };
     document.getElementById("next").onclick=function()
     {
-        if(count>a.length){
-            document.getElementById("image").src=a[count++];
 
-        }else{
-            document.getElementById("image").src=a[a.length-1];
-        }
+            if(count<a.length-1)
+			{
+				count=count+1;
+            	document.getElementById("image").src=a[count];
+				console.log("Next "+count);
+			}
+
     };
 
 </script>
