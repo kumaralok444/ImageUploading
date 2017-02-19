@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 21px;
+}
+.main{
+    width:80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.fun1 img {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.fun1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.test h1 {
+    display: block;
+    font-size: 15px;
+    margin-left: 33px;
+    margin-top: 24px;
+}
+
+.test h2 {
+    display: block;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.test {
+    width: 20%;
+    float: left;
+}
+
+.test {
+    width: 20%;
+    float: left;
+    margin: 10px;
+}
+
+button {
+    float: left;
+    width: 100%;
+    border: none;
+    background: aqua;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 14px;
+}

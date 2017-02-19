@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/Angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet/Angular.css">
+
+<body ng-app="mymodule">
+<div class="main">
+    <div class="fun1" ng-controller="Mycontroller as mc">
+        <div class="test" ng-repeat="item in mc.info">
+            <a href="#"><img ng-src={{item.img}} alt="MyImage"/>
+            <h1>{{item.price}}</h1>
+            <h2>{{item.name}}</h2></a>
+            <button type="button">BUY</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

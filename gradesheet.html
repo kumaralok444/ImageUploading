@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradesheet</title>
+</head>
+<body>
+<label>
+    Enter your marks
+    <input type="text" onchange="gradestatus()" value="" id="grademarks">
+</label>
+</body>
+<script>
+
+    function gradestatus(){
+        var a=document.getElementById("grademarks").value;
+        if(a > b0 && a<30) {
+            alert('Fail');
+        }
+       else if(a>=30 && a<45){
+            alert('GradeC');
+        }
+        else{
+            if(a>=45 && a<60)
+        {
+            alert('Grade B');
+        }
+        else{ alert('Grade A');}
+
+        }
+    }
+</script>
+</html>
